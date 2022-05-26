@@ -12,11 +12,11 @@ window.onload = () => {
 
     const participantsName = []
 
-    // 
     inp.addEventListener("keypress", (event) => {
         participantsName.push('')
         if (event.key === 'Enter') {
             let newNames = event.target.value.split(", ")
+            console.log(newNames)
             if (newNames[0] !== "") {
                 newNames.forEach(name => {
                     participantsName.push(name)
@@ -31,7 +31,8 @@ window.onload = () => {
         }
     })
 
-    // 
+    console.log(participantsName)
+
     giveATryBtn.addEventListener("click", () => {
         if (participantsName.length === 0) {
             alert("There is no entry.")
@@ -49,6 +50,7 @@ window.onload = () => {
                                 if (!firstPosition.innerHTML) {
                                     firstPosition.innerHTML = shuffledNames[rand]
                                     let ind = participantsName.indexOf(shuffledNames[rand])
+                                    console.log(shuffledNames[rand])
                                     participantsName.splice(ind, 1)
                                 } else if (!secondPosition.innerHTML) {
                                     secondPosition.innerHTML = shuffledNames[rand]
@@ -59,7 +61,7 @@ window.onload = () => {
                                     let ind = participantsName.indexOf(shuffledNames[rand])
                                     participantsName.splice(ind, 1)
                                     giveATryBtn.disabled = true
-                                } else{
+                                } else {
                                     giveATryBtn.disabled = true
                                 }
                             }

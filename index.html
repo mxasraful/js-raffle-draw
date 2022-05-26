@@ -14,68 +14,66 @@
 
 </head>
 
-<body class="d-flex flex-column h-100">
-    <main class="flex-shrink-0">
-        <div class="container">
-            <h1 class="mt-3 display-4">Javascript Raffle Draw App By Asraful</h1>
-        </div>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-6">
-                    <p class="mb-2" id="entryAddLabel">Enter All Names</p>
-                    <div class="my-5" id="entryAddedMsg">
-                        <h3>You have entered your names</h3>
-                        <button class="btn btn-primary entryCollapseBtn mt-5" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show
-                            All Student</button>
-                    </div>
-                    <textarea name="" id="inp" cols="30" rows="12" class="form-control mb-4"></textarea>
-                    <div class="entryCollapseBtn">
-                    </div>
-                    <div class="card namesList mt-3 mb-5 collapse" id="collapseExample">
-                        <div class="card-body">
-                            <ul class="list-group" id="name-list"></ul>
-                        </div>
+<body>
+    <div class="container">
+        <h1 class="mt-3 display-4">Javascript Raffle Draw App By Asraful</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <p class="mb-2" id="entryAddLabel">Enter All Names</p>
+                <div class="my-5" id="entryAddedMsg">
+                    <h3>You have entered your names</h3>
+                    <button class="btn btn-primary entryCollapseBtn mt-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show All
+                        Student</button>
+                </div>
+                <textarea name="" id="inp" cols="30" rows="12" class="form-control mb-4"></textarea>
+                <div class="entryCollapseBtn">
+                </div>
+                <div class="card namesList mt-3 mb-5 collapse" id="collapseExample">
+                    <div class="card-body">
+                        <ul class="list-group" id="name-list"></ul>
                     </div>
                 </div>
-                <div class="col-6">
-                    <p class="mb-2">Output Display</p>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="text-center" id="display">Display</h3>
-                        </div>
+            </div>
+            <div class="col-6">
+                <p class="mb-2">Output Display</p>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="text-center" id="display">Display</h3>
                     </div>
-                    <div class="text-center mb-5">
-                        <button class="btn btn-success" id="giveATryBtn">Give A Try</button>
-                    </div>
-                    <div class="card mb-5">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item"><strong>First Winner : <span
-                                            id="firstPosition"></span></strong> </li>
-                                <li class="list-group-item"><strong>Second Winner : <span
-                                            id="secondPosition"></span></strong> </li>
-                                <li class="list-group-item"><strong>Third Winner : <span
-                                            id="thirdPosition"></span></strong> </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="text-center mb-5">
+                    <button class="btn btn-success" id="giveATryBtn">Give A Try</button>
+                </div>
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><strong>First Winner : <span id="firstPosition"></span></strong>
+                            </li>
+                            <li class="list-group-item"><strong>Second Winner : <span
+                                        id="secondPosition"></span></strong> </li>
+                            <li class="list-group-item"><strong>Third Winner : <span id="thirdPosition"></span></strong>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-    <footer class="footer bg-light" style="margin-top: 31vh;">
+    </div>
+    <div class="bg-light px-4" style="margin-top: 31vh;">
         <div class="container">
             <div class="row">
-                <div class="text-dark h4 py-4 col-10">Created By <a href="https://mxasraful.com" class="text-danger"
-                        style="text-decoration: unset;">Asraful</a></div>
-                <div class="col-2 py-4">
-                    <h4><a href="https://asrafulweb.com" class="text-danger"
-                            style="text-decoration: unset;">AsrafulWeb</a></h4>
+                <div class="col-10 text-dark py-4">
+                    <h4> Created By <a href="https://mxasraful.com" class="text-danger" style="text-decoration: unset;">Asraful</a></h4>
+                </div>
+                <div class="col-2 text-dark py-4">
+                    <h4><a href="https://mxasraful.com" class="text-danger" style="text-decoration: unset;">AsrafulWeb</a></h4>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
     <!-- <div class="container mt-5">
         <div class="row px-3 bg-dark">
                 <h5><a href="https://www.youtube.com/watch?v=9Rhawzp-Icg&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&ab_channel=StackLearner">https://www.youtube.com/watch?v=9Rhawzp-Icg&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1&ab_channel=StackLearner</a></h5>
