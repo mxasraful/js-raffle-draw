@@ -12,11 +12,11 @@ window.onload = () => {
 
     const participantsName = []
 
+    // 
     inp.addEventListener("keypress", (event) => {
         participantsName.push('')
         if (event.key === 'Enter') {
             let newNames = event.target.value.split(", ")
-            console.log(newNames)
             if (newNames[0] !== "") {
                 newNames.forEach(name => {
                     participantsName.push(name)
@@ -31,8 +31,7 @@ window.onload = () => {
         }
     })
 
-    console.log(participantsName)
-
+    // 
     giveATryBtn.addEventListener("click", () => {
         if (participantsName.length === 0) {
             alert("There is no entry.")
